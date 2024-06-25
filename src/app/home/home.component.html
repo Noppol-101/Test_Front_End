@@ -1,0 +1,16 @@
+<mat-form-field>
+  <input matInput [(ngModel)]="searchTerm" type="text" placeholder="Search Images" (keyup.enter)="search()">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="search()">Search</button>
+<div class="sort-bt">
+  <button mat-raised-button color="accent" class="sort-button" (click)="sort('asc')">Sort Ascending</button>
+  <button mat-raised-button color="accent" class="sort-button" (click)="sort('desc')">Sort Descending</button>
+</div>
+
+<div class="image-grid">
+  <div class="image-item" *ngFor="let image of filteredImages">
+    <img [src]="image.imageUrl" [alt]="image.title">
+    <div class="image-title">{{ image.title }}</div>
+    <div class="image-title">{{ image.createdDate| slice:0:10 }}</div>
+  </div>
+</div>

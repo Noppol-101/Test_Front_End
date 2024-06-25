@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.sort-button {
+  margin-right: 10px; /* ปรับระยะห่างขวาของปุ่ม */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-title {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+}
