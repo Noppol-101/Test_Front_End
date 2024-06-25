@@ -24,6 +24,7 @@ import { FavoriteImageService } from './favorite-image.service';
     HomeComponent
   ],
   imports: [
+    HttpClientModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
@@ -32,8 +33,7 @@ import { FavoriteImageService } from './favorite-image.service';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule,
-    HttpClientModule
+    MatGridListModule
   ],
   providers: [FavoriteImageService],
   bootstrap: [AppComponent]
