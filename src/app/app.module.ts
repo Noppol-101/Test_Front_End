@@ -15,16 +15,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
-import { FavoriteImageService } from './favorite-image.service'; 
+import { FavoriteImageService } from './favorite-image.service';
+import { AddImageComponent } from './add-image/add-image.component'; 
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    AddImageComponent
   ],
   imports: [
     HttpClientModule,
+    ReactiveFormsModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,

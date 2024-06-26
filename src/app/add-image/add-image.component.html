@@ -1,0 +1,20 @@
+<div class="add-image-container">
+  <h2>Add New Image</h2>
+  <form [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Image URL</mat-label>
+      <input matInput formControlName="imageUrl" placeholder="Enter image URL">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput matInput formControlName="title" placeholder="Enter image title">
+    </mat-form-field>
+    
+
+    <div class="add-bt">
+      <button mat-raised-button class="add-button" color="primary" type="submit" [disabled]="!imageForm.valid">Submit</button>
+      <button mat-raised-button class="add-button" color="warn" routerLink="/">Cancel</button>
+    </div>
+  </form>
+</div>

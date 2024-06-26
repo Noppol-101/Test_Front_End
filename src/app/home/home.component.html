@@ -2,6 +2,7 @@
   <input matInput [(ngModel)]="searchTerm" type="text" placeholder="Search Images" (keyup.enter)="search()">
 </mat-form-field>
 <button mat-raised-button color="primary" (click)="search()">Search</button>
+<button mat-raised-button color="primary" routerLink="/addImage">Add Images</button>
 <div class="sort-bt">
   <button mat-raised-button color="accent" class="sort-button" (click)="sort('asc')">Sort Ascending</button>
   <button mat-raised-button color="accent" class="sort-button" (click)="sort('desc')">Sort Descending</button>
