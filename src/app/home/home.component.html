@@ -12,6 +12,6 @@
   <div class="image-item" *ngFor="let image of filteredImages">
     <img [src]="image.imageUrl" [alt]="image.title">
     <div class="image-title">{{ image.title }}</div>
-    <div class="image-title">{{ image.createdDate| slice:0:10 }}</div>
+    <!-- <div class="image-title">{{ image.createdDate| slice:0:10 }}</div> -->
   </div>
 </div>
